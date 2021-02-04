@@ -1,24 +1,32 @@
 <template>
-  <h1>{{ msg }}</h1>
-  <el-button @click="state.count++">count is: {{ state.count }}</el-button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <div @click="add" class="count">
+    <el-button>el-buttons</el-button>
+    {{ count }}
+  </div>
 </template>
 
-<script setup>
-import { defineProps, reactive } from "vue";
+<script>
+import { reactive, toRefs } from 'vue'
 
-defineProps({
-  msg: String,
-});
-
-const state = reactive({ count: 0 });
+export default {
+  setup () {
+    const state = reactive({
+      count: 0,
+    })
+    const add = () => {
+      state.count ++
+    };
+    return {
+      ...toRefs(state),
+      add
+    }
+  }
+}
 </script>
 
-<style scoped>
-a {
-  color: #42b983;
-}
+<style lang="scss" scoped>
+  .count{
+    font-size: 24px;
+    color: forestgreen;
+  }
 </style>
