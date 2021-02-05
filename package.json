@@ -8,7 +8,8 @@
   "dependencies": {
     "element3": "^0.0.39",
     "mockjs": "^1.1.0",
-    "vue": "^3.0.4"
+    "vue": "^3.0.4",
+    "vue-router": "^4.0.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.0.4",

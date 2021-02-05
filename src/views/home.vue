@@ -1,32 +1,30 @@
 <template>
-  <div @click="add" class="count">
-    <el-button>el-buttons</el-button>
-    <span>{{ count }}</span>
+  <div>
+    <img alt="Vue logo" src="/@assets/logo.png" />
+    <HelloWorld msg="Hello Vue 3.0 + Vite" />
   </div>
 </template>
 
 <script>
+import HelloWorld from '/@comps/HelloWorld.vue'
 import { reactive, toRefs } from 'vue'
 
 export default {
+  components: {
+    HelloWorld,
+  },
   setup () {
     const state = reactive({
       count: 0,
     })
-    const add = () => {
-      state.count ++
-    };
+  
     return {
       ...toRefs(state),
-      add
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  .count{
-    font-size: 24px;
-    color: forestgreen;
-  }
+
 </style>
