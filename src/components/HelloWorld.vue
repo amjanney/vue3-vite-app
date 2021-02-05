@@ -1,7 +1,11 @@
 <template>
-  <div @click="add" class="count">
-    <el-button>el-buttons</el-button>
-    <span>{{ count }}</span>
+  <div>
+    <img alt="Vue logo" src="/@assets/logo.png" />
+    <div class="content">
+      <el-button @click="add" >el-buttons</el-button>
+      <h3 class="count">{{ count }}</h3>
+      <p>{{$store.state.msg}}</p>
+    </div>
   </div>
 </template>
 
@@ -25,6 +29,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  img{
+    display: inline-block;
+  }
   .count{
     font-size: 24px;
     color: forestgreen;
