@@ -12,7 +12,7 @@ export const routes = [
         path: '/home',
         component: () => import("/@views/home.vue"),
         name: "Home",
-        meta: { title: "首页", icon: "el-icon-s-home" },
+        meta: { title: "首页", icon: "el-icon-s-promotion" },
         children: [
           {
             path: ":id",
