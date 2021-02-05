@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hello-container">
     <img alt="Vue logo" src="/@assets/logo.png" />
     <div class="content">
       <el-button @click="add" >el-buttons</el-button>
@@ -29,11 +29,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  img{
-    display: inline-block;
-  }
-  .count{
-    font-size: 24px;
-    color: forestgreen;
+  .hello-container{
+    text-align: center;
+    img{
+      display: inline-block;
+    }
+    .count{
+      font-size: 24px;
+      color: forestgreen;
+    }
   }
 </style>
