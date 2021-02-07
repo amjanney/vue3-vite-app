@@ -6,6 +6,7 @@
     "build": "vite build"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "element3": "^0.0.39",
     "mockjs": "^1.1.0",
     "path": "^0.12.7",
@@ -21,6 +22,6 @@
     "cross-env": "^7.0.3",
     "sass": "^1.32.6",
     "vite": "^1.0.0-rc.13",
-    "vite-plugin-mock": "^2.0.5"
+    "vite-plugin-mock": "^2.0.0-beta.3"
   }
 }
