@@ -1,6 +1,6 @@
 <template>
   <div class="hello-container">
-    <img alt="Vue logo" src="/@assets/logo.png" />
+    <img alt="Vue logo" src="assets/logo.png" />
     <div class="content">
       <el-button @click="add" >el-buttons</el-button>
       <h3 class="count">{{ count }}</h3>

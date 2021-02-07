@@ -46,7 +46,7 @@
 import path from "path";
 import Item from "./Item.vue";
 import AppLink from "./Link.vue";
-import { isExternal } from "/@utils/validate";
+import { isExternal } from "utils/validate";
 import { defineProps, ref } from "vue";
 
 const props = defineProps({

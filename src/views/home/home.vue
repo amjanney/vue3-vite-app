@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import HelloWorld from '/@comps/HelloWorld.vue'
+import HelloWorld from 'comps/HelloWorld.vue'
 import { reactive, toRefs } from 'vue'
 
 export default {

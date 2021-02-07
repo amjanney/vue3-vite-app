@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import Layout from "/@layouts/index.vue";
+import Layout from "layouts/index.vue";
 
 export const routes = [ 
   {
@@ -10,13 +10,13 @@ export const routes = [
     children: [
       {
         path: '/home',
-        component: () => import("/@views/home/home.vue"),
+        component: () => import("views/home/home.vue"),
         name: "Home",
         meta: { title: "首页", icon: "el-icon-s-promotion" },
         children: [
           {
             path: ":id",
-            component: () => import("/@views/home/detail.vue"),
+            component: () => import("views/home/detail.vue"),
             name: "Detail",
             hidden: true,
             meta: {
@@ -40,7 +40,7 @@ export const routes = [
     children: [
       {
         path: "list",
-        component: () => import("/@views/users/list.vue"),
+        component: () => import("views/users/list.vue"),
         meta: {
           title: "用户列表",
           icon: "el-icon-document",
@@ -48,7 +48,7 @@ export const routes = [
       },
       {
         path: "create",
-        component: () => import("/@views/users/create.vue"),
+        component: () => import("views/users/create.vue"),
         hidden: true,
         meta: {
           title: "创建新用户",
@@ -58,7 +58,7 @@ export const routes = [
       {
         path: "edit/:id(\\d+)",
         name: "userEdit",
-        component: () => import("/@views/users/edit.vue"),
+        component: () => import("views/users/edit.vue"),
         hidden: true,
         meta: {
           title: "编辑用户信息",
